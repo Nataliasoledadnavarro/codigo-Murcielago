@@ -87,6 +87,12 @@ footer {
   margin-top: 50px;
 }
 
+a:hover {
+  border: solid 2px rgba(201, 165, 241, 0.767);
+  padding: 10px;
+  border-radius: 30px;
+}
+
 @media screen and (max-width: 780px) {
   h1 {
     font-size: 40px;
