@@ -1,3 +1,6 @@
+
+//Función para traducir al codigo murciélago
+
 const inputTexto = document.getElementById("ingresar-texto");
 const inputTextoTraducido = document.getElementById("texto-traducido");
 
@@ -16,3 +19,24 @@ inputTexto.oninput = () => {
 
   inputTextoTraducido.value = textoTraducido;
 };
+
+//Función para traducir del murcielago a texto tradicional
+
+const textoEnMurcielago = document.getElementById("texto-murcielago")
+const aTextoTradicional = document.getElementById("texto-sin-codigo")
+
+textoEnMurcielago.oninput = () => {
+  const textoTradicional = textoEnMurcielago.value
+  .replace(/0/gi, "m")
+  .replace(/1/gi, "u")
+  .replace(/2/gi, "r")
+  .replace(/3/gi, "c")
+  .replace(/4/gi, "i")
+  .replace(/5/gi, "e")
+  .replace(/6/gi, "l")
+  .replace(/7/gi, "a")
+  .replace(/8/gi, "g")
+  .replace(/9/gi, "o")
+
+  aTextoTradicional.value = textoTradicional
+}
