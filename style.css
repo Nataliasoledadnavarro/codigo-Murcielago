@@ -6,8 +6,8 @@ body {
   font-family: "Patrick Hand", cursive;
 }
 
-header {
-  height: 200px;
+header,
+footer {
   background-image: url("https://media.istockphoto.com/vectors/magic-mermaid-seamless-pattern-candy-color-pastel-backdrop-mermaid-vector-id868766730?b=1&k=6&m=868766730&s=170667a&w=0&h=wP6Y4QJeGJAvYlnW7eZcO5fXQENzBE40qMpBaxASd6o=");
   display: flex;
   align-items: center;
@@ -20,17 +20,114 @@ h1 {
   margin: 0px 0px 30px 0px;
 }
 
+h2 {
+  font-size: 30px;
+  text-align: center;
+  color: rgba(167, 112, 219, 0.986);
+  margin-bottom: 10px;
+}
+.parrafos-informativos {
+  font-size: 24px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  width: 60%;
+  color: rgb(39, 104, 104);
+  text-align: center;
+}
+.imagen-codigo {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+nav {
+  width: 50%;
+}
+
 ul {
   display: flex;
   justify-content: space-around;
   list-style: none;
-  width: 500px;
   padding: 0;
-  margin: 0;
   font-size: 30px;
+  margin: 0px 0px 30px 0px;
 }
 
 a {
   text-decoration: none;
   color: black;
+}
+
+textarea {
+  width: 400px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: rgb(39, 104, 104);
+  font-size: 20px;
+}
+.hecho-por {
+  text-align: center;
+  font-size: 18px;
+}
+
+footer {
+  padding: 50px;
+  margin-top: 50px;
+}
+
+@media screen and (max-width: 780px) {
+  h1 {
+    font-size: 40px;
+  }
+  nav {
+    width: 80%;
+  }
+  ul {
+    font-size: 25px;
+  }
+  .parrafos-informativos {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  h1 {
+    font-size: 30px;
+  }
+  nav {
+    width: 90%;
+  }
+  ul {
+    font-size: 20px;
+  }
+  .parrafos-informativos {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 410px) {
+  h1 {
+    font-size: 25px;
+  }
+  ul {
+    font-size: 14px;
+  }
+  textarea {
+    width: 300px;
+  }
+  .imagen-codigo img {
+    width: 300px;
+  }
 }

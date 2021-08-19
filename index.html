@@ -4,10 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
     <link href="style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet"/>
+    <script src="https://kit.fontawesome.com/0ca0e55b9a.js" crossorigin="anonymous"></script>
     <title>Document</title>
   </head>
   <body>
@@ -23,17 +24,64 @@
     </header>
 
     <main>
+      <section class="informacion">
+        <a name="informacion"></a>
+        <h2>¿De que se trata el código murcielago?</h2>
+        <p class="parrafos-informativos">
+          Es una herramienta sencilla para enviar mensajes encriptados, sólo podrá entender el texto quien sepa traducirlo. 
+        </p>
+      </section>
+      <section class="funcionamiento">
+        <a name="funcionamiento"></a>
+        <h2>¿Cómo funciona?</h2>
+        <p class="parrafos-informativos">
+          Existen muchas claves como la clave murciélago, ésta se basa en
+          escribir el mensaje y cambiar las letras que aparecen en la palabra
+          clave por el número que le corresponde. 
+          Si no aparece la letra, se coloca la letra original.
+        </p>
+          <div class="imagen-codigo"><img src="58d0bfc1010fd356a8ffe0092612133d.jpg" alt="Muestra los valores a reemplazar m=0 u=1 r=2 c=3 i=4 e=5 l=6 a=7 g=8 o=9"></div>
+        
+      </section>
+
+
       <form>
-        <label for="ingresar-texto">
-          <textarea id="ingresar-texto" rows="50" placeholder="Ingresa acá el texto a traducir."></textarea>
+        <a name="traductor"></a>
+        <h2>¡A traducir!</h2>
+        <label for="ingresar-texto"> Ingresá acá el texto a traducir.
+          <textarea id="ingresar-texto" ></textarea>
         </label>
-        <label for="texto-traducido">
-          <textarea id="texto-traducido" rows="50"></textarea>
+        <label for="texto-traducido"> ¡Tu texto en código murciélago!
+          <textarea id="texto-traducido"></textarea>
         </label>
       </form>
     </main>
 
-    <footer></footer>
+    <footer>
+
+    <nav class="nav-inferior">
+
+      <ul class="iconos-footer">
+  
+        <li>
+          <a href="https://twitter.com/" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        </li> 
+        <li>
+          <a href="https://github.com/Nataliasoledadnavarro" aria-label="Github"><i class="fab fa-github-alt"></i></a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/nataliasoledadnavarro/" aria-label="linkedin"><i class="fab fa-linkedin-in"></i></a>
+        </li> 
+        <li>
+          <a href="https://mail.google.com/" aria-label="Email"> <i class="fas fa-envelope"></i></a>
+        </li>
+      
+      </ul>
+  
+      <p class="hecho-por">Hecho con <span role="img" aria-label="Corazón">💗</span> por Naty </p>
+    </nav>
+
+    </footer>
 
     <script src="index.js"></script>
   </body>
